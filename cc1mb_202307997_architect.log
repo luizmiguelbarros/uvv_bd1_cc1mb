@@ -1,0 +1,552 @@
+0    [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ArchitectUtils  - Log4J configured successfully
+926  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+1291 [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+1300 [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+1386 [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+24519 [Thread-2] ERROR ca.sqlpower.architect.swingui.action.CheckForUpdateAction  - Fail to retrieve current version number!
+17243539 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@217111ac]
+17246984 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@217111ac]
+17246989 [Objects-Adder] INFO  ca.sqlpower.architect.swingui.PlayPen  - AddObjectsTask starting on thread Objects-Adder
+17246995 [Objects-Adder] INFO  ca.sqlpower.architect.swingui.PlayPen  - AddObjectsTask done
+17247017 [AWT-EventQueue-0] ERROR ca.sqlpower.architect.swingui.PlayPen  - Unknown object dropped in PlayPen: quantidade: NUMERIC(38)
+17250071 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@217111ac]
+17251406 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@217111ac]
+17433508 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+17875103 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+18251985 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+18251986 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+18251986 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+18252004 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+CREATE TABLE produtos (
+                produto_id NUMERIC(38) NOT NULL,
+                nome VARCHAR(255) NOT NULL,
+                preco_unitario NUMERIC(10,2),
+                detalhes BYTEA,
+                imagem BYTEA,
+                imagem_mime_type VARCHAR(512),
+                imagem_arquivo VARCHAR(512),
+                imagem_charset VARCHAR(512),
+                imagem_ultima_atualizacao DATE,
+                CONSTRAINT produto_id PRIMARY KEY (produto_id)
+)
+18252004 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN produtos.produto_id IS 'id do produto.'
+18252004 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN produtos.nome IS 'nome do produto.'
+18252005 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN produtos.preco_unitario IS 'preco da unidade'
+18252014 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN produtos.detalhes IS 'detalhes.'
+18252015 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN produtos.imagem IS 'imagem.'
+18252015 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN produtos.imagem_mime_type IS 'imagem mime type.'
+18252015 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN produtos.imagem_arquivo IS 'imagem do arquivo.'
+18252015 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN produtos.imagem_charset IS 'imagem charset.'
+18252015 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN produtos.imagem_ultima_atualizacao IS 'ultima atualizacao'
+18252018 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+
+CREATE TABLE lojas (
+                loja_id NUMERIC(38) NOT NULL,
+                endereco_web VARCHAR(100),
+                endereco_fisico VARCHAR(512),
+                nome VARCHAR(255) NOT NULL,
+                latitude NUMERIC,
+                logo BYTEA,
+                longitude NUMERIC,
+                logo_mime_type VARCHAR(512),
+                logo_arquivo VARCHAR(512),
+                logo_charset VARCHAR(512),
+                logo_ultima_atualizacao DATE,
+                CONSTRAINT loja_id PRIMARY KEY (loja_id)
+)
+18252018 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN lojas.loja_id IS 'id da loja.'
+18252018 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN lojas.endereco_web IS 'endereco web.'
+18252018 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN lojas.endereco_fisico IS 'endereco fisico.'
+18252019 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN lojas.nome IS 'nome.'
+18252019 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN lojas.latitude IS 'latitude.'
+18252019 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN lojas.logo IS 'logo.'
+18252019 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN lojas.longitude IS 'longitude.'
+18252019 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN lojas.logo_mime_type IS 'tipo da logo.'
+18252019 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN lojas.logo_arquivo IS 'arquivo da logo.'
+18252019 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN lojas.logo_charset IS 'charset da logo.'
+18252020 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN lojas.logo_ultima_atualizacao IS 'ultima atualizacao da logo.'
+18252020 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+
+CREATE TABLE estoques (
+                estoque_id NUMERIC(38) NOT NULL,
+                produto_id NUMERIC(38) NOT NULL,
+                loja_id NUMERIC(38) NOT NULL,
+                quantidade NUMERIC(38) NOT NULL,
+                CONSTRAINT estoque_id PRIMARY KEY (estoque_id)
+)
+18252020 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN estoques.estoque_id IS 'id do estoque.'
+18252020 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN estoques.produto_id IS 'id do produto.'
+18252021 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN estoques.loja_id IS 'id da loja.'
+18252021 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN estoques.quantidade IS 'quantidade de produtos no estoque.'
+18252021 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+
+CREATE TABLE clientes (
+                cliente_id NUMERIC(38) NOT NULL,
+                nome VARCHAR(255) NOT NULL,
+                email VARCHAR(255) NOT NULL,
+                telefone1 VARCHAR(20),
+                telefone3 VARCHAR(20),
+                telefone2 VARCHAR(20),
+                CONSTRAINT cliente_id PRIMARY KEY (cliente_id)
+)
+18252021 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON TABLE clientes IS 'Tabela de clientes'
+18252021 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN clientes.cliente_id IS 'ID do cliente.'
+18252022 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN clientes.nome IS 'nome do cliente.'
+18252022 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN clientes.email IS 'email do cliente.'
+18252022 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN clientes.telefone1 IS 'telefone do cliente.'
+18252022 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN clientes.telefone3 IS 'terceiro telefone do cliente.'
+18252022 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN clientes.telefone2 IS 'segundo telefone do cliente.'
+18252023 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+
+CREATE TABLE envios (
+                envio_id VARCHAR(38) NOT NULL,
+                endereco_entrega VARCHAR(512) NOT NULL,
+                status VARCHAR(15) NOT NULL,
+                loja_id NUMERIC(38) NOT NULL,
+                cliente_id NUMERIC(38) NOT NULL,
+                CONSTRAINT envio_id PRIMARY KEY (envio_id)
+)
+18252023 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN envios.envio_id IS 'id de envio'
+18252023 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN envios.endereco_entrega IS 'endereco de entrega.'
+18252023 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN envios.status IS 'status do envio.'
+18252023 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN envios.loja_id IS 'id da loja.'
+18252024 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN envios.cliente_id IS 'ID do cliente.'
+18252024 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+
+CREATE TABLE pedidos (
+                pedidos_id NUMERIC(38) NOT NULL,
+                status VARCHAR(15) NOT NULL,
+                data_hora TIMESTAMP NOT NULL,
+                cliente_id NUMERIC(38) NOT NULL,
+                loja_id NUMERIC(38) NOT NULL,
+                CONSTRAINT pedidos_id PRIMARY KEY (pedidos_id)
+)
+18252024 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN pedidos.pedidos_id IS 'id do pedido.'
+18252024 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN pedidos.status IS 'status do pedido,'
+18252025 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN pedidos.data_hora IS 'data e hora.'
+18252025 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN pedidos.cliente_id IS 'ID do cliente.'
+18252025 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN pedidos.loja_id IS 'id da loja.'
+18252025 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+
+CREATE TABLE pedido_itens (
+                produto_id NUMERIC(38) NOT NULL,
+                pedidos_id NUMERIC(38) NOT NULL,
+                numero_da_linha NUMERIC(38) NOT NULL,
+                preco_unitario NUMERIC(10,2) NOT NULL,
+                quantidade NUMERIC(38) NOT NULL,
+                envio_id VARCHAR(38) NOT NULL,
+                CONSTRAINT pedido_id PRIMARY KEY (produto_id, pedidos_id)
+)
+18252025 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN pedido_itens.produto_id IS 'id do produto.'
+18252026 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN pedido_itens.pedidos_id IS 'id do pedido.'
+18252026 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN pedido_itens.numero_da_linha IS 'numero da linha'
+18252026 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN pedido_itens.preco_unitario IS 'preco unitario dos produtos.'
+18252026 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN pedido_itens.quantidade IS 'quantidade.'
+18252026 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN pedido_itens.envio_id IS 'id de envio'
+18252027 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+
+ALTER TABLE estoques ADD CONSTRAINT produtos_estoques_fk
+FOREIGN KEY (produto_id)
+REFERENCES produtos (produto_id)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE
+18252027 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE pedido_itens ADD CONSTRAINT produtos_pedido_itens_fk
+FOREIGN KEY (produto_id)
+REFERENCES produtos (produto_id)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE
+18252027 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE pedidos ADD CONSTRAINT lojas_pedidos_fk
+FOREIGN KEY (loja_id)
+REFERENCES lojas (loja_id)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE
+18252028 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE estoques ADD CONSTRAINT lojas_estoques_fk
+FOREIGN KEY (loja_id)
+REFERENCES lojas (loja_id)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE
+18252028 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE envios ADD CONSTRAINT lojas_envios_fk
+FOREIGN KEY (loja_id)
+REFERENCES lojas (loja_id)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE
+18252043 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE pedidos ADD CONSTRAINT clientes_pedidos_fk
+FOREIGN KEY (cliente_id)
+REFERENCES clientes (cliente_id)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE
+18252044 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE envios ADD CONSTRAINT clientes_envios_fk
+FOREIGN KEY (cliente_id)
+REFERENCES clientes (cliente_id)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE
+18252044 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE pedido_itens ADD CONSTRAINT envios_pedido_itens_fk
+FOREIGN KEY (envio_id)
+REFERENCES envios (envio_id)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE
+18252044 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE pedido_itens ADD CONSTRAINT pedidos_pedido_itens_fk
+FOREIGN KEY (pedidos_id)
+REFERENCES pedidos (pedidos_id)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE
+18252067 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.SQLScriptDialog  - The list size is :63
+18307466 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+CREATE TABLE public.produtos (
+                produto_id NUMERIC(38) NOT NULL,
+                nome VARCHAR(255) NOT NULL,
+                preco_unitario NUMERIC(10,2),
+                detalhes BYTEA,
+                imagem BYTEA,
+                imagem_mime_type VARCHAR(512),
+                imagem_arquivo VARCHAR(512),
+                imagem_charset VARCHAR(512),
+                imagem_ultima_atualizacao DATE,
+                CONSTRAINT produto_id PRIMARY KEY (produto_id)
+)
+18307467 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.produtos.produto_id IS 'id do produto.'
+18307468 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.produtos.nome IS 'nome do produto.'
+18307469 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.produtos.preco_unitario IS 'preco da unidade'
+18307469 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.produtos.detalhes IS 'detalhes.'
+18307470 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.produtos.imagem IS 'imagem.'
+18307470 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.produtos.imagem_mime_type IS 'imagem mime type.'
+18307471 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.produtos.imagem_arquivo IS 'imagem do arquivo.'
+18307471 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.produtos.imagem_charset IS 'imagem charset.'
+18307471 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.produtos.imagem_ultima_atualizacao IS 'ultima atualizacao'
+18307478 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+
+CREATE TABLE public.lojas (
+                loja_id NUMERIC(38) NOT NULL,
+                endereco_web VARCHAR(100),
+                endereco_fisico VARCHAR(512),
+                nome VARCHAR(255) NOT NULL,
+                latitude NUMERIC,
+                logo BYTEA,
+                longitude NUMERIC,
+                logo_mime_type VARCHAR(512),
+                logo_arquivo VARCHAR(512),
+                logo_charset VARCHAR(512),
+                logo_ultima_atualizacao DATE,
+                CONSTRAINT loja_id PRIMARY KEY (loja_id)
+)
+18307478 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.lojas.loja_id IS 'id da loja.'
+18307478 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.lojas.endereco_web IS 'endereco web.'
+18307479 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.lojas.endereco_fisico IS 'endereco fisico.'
+18307479 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.lojas.nome IS 'nome.'
+18307481 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.lojas.latitude IS 'latitude.'
+18307481 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.lojas.logo IS 'logo.'
+18307482 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.lojas.longitude IS 'longitude.'
+18307482 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.lojas.logo_mime_type IS 'tipo da logo.'
+18307482 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.lojas.logo_arquivo IS 'arquivo da logo.'
+18307482 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.lojas.logo_charset IS 'charset da logo.'
+18307484 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.lojas.logo_ultima_atualizacao IS 'ultima atualizacao da logo.'
+18307485 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+
+CREATE TABLE public.estoques (
+                estoque_id NUMERIC(38) NOT NULL,
+                produto_id NUMERIC(38) NOT NULL,
+                loja_id NUMERIC(38) NOT NULL,
+                quantidade NUMERIC(38) NOT NULL,
+                CONSTRAINT estoque_id PRIMARY KEY (estoque_id)
+)
+18307485 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.estoques.estoque_id IS 'id do estoque.'
+18307485 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.estoques.produto_id IS 'id do produto.'
+18307485 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.estoques.loja_id IS 'id da loja.'
+18307485 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.estoques.quantidade IS 'quantidade de produtos no estoque.'
+18307486 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+
+CREATE TABLE public.clientes (
+                cliente_id NUMERIC(38) NOT NULL,
+                nome VARCHAR(255) NOT NULL,
+                email VARCHAR(255) NOT NULL,
+                telefone1 VARCHAR(20),
+                telefone3 VARCHAR(20),
+                telefone2 VARCHAR(20),
+                CONSTRAINT cliente_id PRIMARY KEY (cliente_id)
+)
+18307486 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON TABLE public.clientes IS 'Tabela de clientes'
+18307486 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.clientes.cliente_id IS 'ID do cliente.'
+18307486 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.clientes.nome IS 'nome do cliente.'
+18307486 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.clientes.email IS 'email do cliente.'
+18307486 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.clientes.telefone1 IS 'telefone do cliente.'
+18307487 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.clientes.telefone3 IS 'terceiro telefone do cliente.'
+18307487 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.clientes.telefone2 IS 'segundo telefone do cliente.'
+18307487 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+
+CREATE TABLE public.envios (
+                envio_id VARCHAR(38) NOT NULL,
+                endereco_entrega VARCHAR(512) NOT NULL,
+                status VARCHAR(15) NOT NULL,
+                loja_id NUMERIC(38) NOT NULL,
+                cliente_id NUMERIC(38) NOT NULL,
+                CONSTRAINT envio_id PRIMARY KEY (envio_id)
+)
+18307487 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.envios.envio_id IS 'id de envio'
+18307488 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.envios.endereco_entrega IS 'endereco de entrega.'
+18307488 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.envios.status IS 'status do envio.'
+18307488 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.envios.loja_id IS 'id da loja.'
+18307488 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.envios.cliente_id IS 'ID do cliente.'
+18307488 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+
+CREATE TABLE public.pedidos (
+                pedidos_id NUMERIC(38) NOT NULL,
+                status VARCHAR(15) NOT NULL,
+                data_hora TIMESTAMP NOT NULL,
+                cliente_id NUMERIC(38) NOT NULL,
+                loja_id NUMERIC(38) NOT NULL,
+                CONSTRAINT pedidos_id PRIMARY KEY (pedidos_id)
+)
+18307489 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.pedidos.pedidos_id IS 'id do pedido.'
+18307489 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.pedidos.status IS 'status do pedido,'
+18307489 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.pedidos.data_hora IS 'data e hora.'
+18307489 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.pedidos.cliente_id IS 'ID do cliente.'
+18307489 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.pedidos.loja_id IS 'id da loja.'
+18307490 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+
+CREATE TABLE public.pedido_itens (
+                produto_id NUMERIC(38) NOT NULL,
+                pedidos_id NUMERIC(38) NOT NULL,
+                numero_da_linha NUMERIC(38) NOT NULL,
+                preco_unitario NUMERIC(10,2) NOT NULL,
+                quantidade NUMERIC(38) NOT NULL,
+                envio_id VARCHAR(38),
+                CONSTRAINT pedido_id PRIMARY KEY (produto_id, pedidos_id)
+)
+18307490 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.pedido_itens.produto_id IS 'id do produto.'
+18307490 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.pedido_itens.pedidos_id IS 'id do pedido.'
+18307490 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.pedido_itens.numero_da_linha IS 'numero da linha'
+18307490 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.pedido_itens.preco_unitario IS 'preco unitario dos produtos.'
+18307490 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.pedido_itens.quantidade IS 'quantidade.'
+18307490 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+COMMENT ON COLUMN public.pedido_itens.envio_id IS 'id de envio'
+18307491 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+
+ALTER TABLE public.estoques ADD CONSTRAINT produtos_estoques_fk
+FOREIGN KEY (produto_id)
+REFERENCES public.produtos (produto_id)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE
+18307491 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE public.pedido_itens ADD CONSTRAINT produtos_pedido_itens_fk
+FOREIGN KEY (produto_id)
+REFERENCES public.produtos (produto_id)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE
+18307491 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE public.pedidos ADD CONSTRAINT lojas_pedidos_fk
+FOREIGN KEY (loja_id)
+REFERENCES public.lojas (loja_id)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE
+18307492 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE public.estoques ADD CONSTRAINT lojas_estoques_fk
+FOREIGN KEY (loja_id)
+REFERENCES public.lojas (loja_id)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE
+18307492 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE public.envios ADD CONSTRAINT lojas_envios_fk
+FOREIGN KEY (loja_id)
+REFERENCES public.lojas (loja_id)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE
+18307492 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE public.pedidos ADD CONSTRAINT clientes_pedidos_fk
+FOREIGN KEY (cliente_id)
+REFERENCES public.clientes (cliente_id)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE
+18307492 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE public.envios ADD CONSTRAINT clientes_envios_fk
+FOREIGN KEY (cliente_id)
+REFERENCES public.clientes (cliente_id)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE
+18307493 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE public.pedido_itens ADD CONSTRAINT envios_pedido_itens_fk
+FOREIGN KEY (envio_id)
+REFERENCES public.envios (envio_id)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE
+18307493 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE public.pedido_itens ADD CONSTRAINT pedidos_pedido_itens_fk
+FOREIGN KEY (pedidos_id)
+REFERENCES public.pedidos (pedidos_id)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE
+18307523 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.SQLScriptDialog  - The list size is :63
+18316724 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.SQLScriptDialog  - SQL_FILE_FILTER:SQL Script Files:[sql, ddl]
+0    [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ArchitectUtils  - Log4J configured successfully
+820  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+985  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+986  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+1205 [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+25897 [Thread-2] ERROR ca.sqlpower.architect.swingui.action.CheckForUpdateAction  - Fail to retrieve current version number!
+36068 [Thread-3] ERROR ca.sqlpower.architect.swingui.SwingUIProjectLoader  - Error parsing project file's olap schemas!
+org.xml.sax.SAXParseException; Premature end of file.
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at ca.sqlpower.architect.olap.MondrianXMLReader.parse(MondrianXMLReader.java:103)
+	at ca.sqlpower.architect.swingui.SwingUIProjectLoader.load(SwingUIProjectLoader.java:212)
+	at ca.sqlpower.architect.swingui.action.OpenProjectAction$LoadFileWorker.doStuff(OpenProjectAction.java:218)
+	at ca.sqlpower.swingui.SPSwingWorker.run(SPSwingWorker.java:104)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+36306 [AWT-EventQueue-0] ERROR ca.sqlpower.architect.swingui.action.OpenProjectAction  - Got exception while opening a project
+ca.sqlpower.sqlobject.SQLObjectException: SAX Exception in project file olap schemas parse!
+	at ca.sqlpower.architect.swingui.SwingUIProjectLoader.load(SwingUIProjectLoader.java:215)
+	at ca.sqlpower.architect.swingui.action.OpenProjectAction$LoadFileWorker.doStuff(OpenProjectAction.java:218)
+	at ca.sqlpower.swingui.SPSwingWorker.run(SPSwingWorker.java:104)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.xml.sax.SAXParseException; Premature end of file.
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at ca.sqlpower.architect.olap.MondrianXMLReader.parse(MondrianXMLReader.java:103)
+	at ca.sqlpower.architect.swingui.SwingUIProjectLoader.load(SwingUIProjectLoader.java:212)
+	... 3 more
